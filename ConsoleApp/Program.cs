@@ -33,7 +33,8 @@ foreach (string folder in childFolders)
     {
         RedirectStandardOutput = true,
         UseShellExecute = false,
-        CreateNoWindow = true
+        CreateNoWindow = true,
+        WorkingDirectory = folder
     };
 
     Process? process = Process.Start(processInfo);
